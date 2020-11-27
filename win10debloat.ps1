@@ -84,7 +84,7 @@ $tweaks = @(
 
 	### Service Tweaks ###
 	"DisableUpdateMSRT",            # "EnableUpdateMSRT",
-	"DisableUpdateDriver",          # "EnableUpdateDriver",
+	"EnableUpdateDriver",			#"DisableUpdateDriver",           
 	"DisableUpdateRestart",         # "EnableUpdateRestart",
 	"DisableHomeGroups",            # "EnableHomeGroups",
 	"DisableSharedExperiences",     # "EnableSharedExperiences",
@@ -2020,7 +2020,7 @@ Function UninstallMsftBloat {
 	Get-AppxPackage "Microsoft.Office.Sway" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.OneConnect" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.People" | Remove-AppxPackage
-	Get-AppxPackage "Microsoft.Print3D" | Remove-AppxPackage
+	# Get-AppxPackage "Microsoft.Print3D" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.RemoteDesktop" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.Wallet" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.WindowsAlarms" | Remove-AppxPackage
@@ -2592,7 +2592,7 @@ Function DebloatAll {
         "Microsoft.GetHelp"
         "Microsoft.Getstarted"
         "Microsoft.Messaging"
-        "Microsoft.Microsoft3DViewer"
+       # "Microsoft.Microsoft3DViewer"
         "Microsoft.MicrosoftSolitaireCollection"
         "Microsoft.NetworkSpeedTest"
         "Microsoft.News"
@@ -2600,7 +2600,7 @@ Function DebloatAll {
         "Microsoft.Office.Sway"
         "Microsoft.OneConnect"
         "Microsoft.People"
-        "Microsoft.Print3D"
+       # "Microsoft.Print3D"
         "Microsoft.SkypeApp"
         "Microsoft.StorePurchaseApp"
         "Microsoft.Whiteboard"
